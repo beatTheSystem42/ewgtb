@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <meta charset="UTF-8">
+  <script>
+    // Define the redirect targets
+    const destinations = {
+      1: "https://ebird.org/home",
+      2: "https://merlin.allaboutbirds.org/",
+      3: "https://www.instagram.com/earlyworm_getsthebird"
+    };
+
+    // Read URL query string (?id=23)
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    // Do the redirect if the ID exists
+    if (destinations[id]) {
+      window.location.replace(destinations[id]);
+    } else {
+      document.addEventListener("DOMContentLoaded", () => {
+        document.body.innerHTML = `<h1>Invalid or missing QR code ID.</h1>`;
+      });
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting…</p>
+</body>
+</html>
