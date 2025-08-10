@@ -66,6 +66,17 @@
     .btns{
       display:flex; flex-wrap:wrap; gap:10px; margin: 16px 0 6px 0;
     }
+    .btn {
+      display:inline-block;
+      padding: 10px 16px;
+      border-radius:8px;
+      border:1px solid var(--border);
+      text-decoration:none;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background .2s ease, transform .1s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
     .btn.primary {
       background: #FF9900; /* Amazon yellow-orange */
       color: #111; /* dark text like Amazon uses */
@@ -74,10 +85,12 @@
     .btn.primary:hover {
       background: #e68a00; /* slightly darker on hover */
     }
-    .btn.primary{
-      background:var(--accent);
-      color:white;
-      border-color: transparent;
+    .btn:not(.primary) {
+      background: #f0f0f0;
+      color: #111;
+    }
+    .btn:not(.primary):hover {
+      background: #e0e0e0;
     }
     .meta{
       margin-top: 10px;
@@ -104,7 +117,6 @@
         </div>
 
         <div style="display:flex; justify-content:center;">
-          <!-- Your cover path -->
           <img class="cover" src="assets/bookCoverWeb.jpg" alt="Book cover: EWGTB" />
         </div>
       </header>
