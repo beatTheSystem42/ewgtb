@@ -7,13 +7,14 @@
   <meta name="description" content="Field Guide Of All The Birds We Found One Year In The United States" />
   <style>
     :root{
-      --bg:#fafafa; --fg:#111; --muted:#666; --card:#ffffff; --border:#e6e6e6; --accent:#0d6efd;
+      --bg:#ffffff;
+      --fg:#111111;
+      --muted:#555555;
+      --card:#f9f9f9;
+      --border:#dddddd;
+      --accent:#0d6efd;
     }
-    @media (prefers-color-scheme: dark){
-      :root{
-        --bg:#0f1115; --fg:#e7e7e7; --muted:#a1a1a1; --card:#151821; --border:#262a36; --accent:#6ea8fe;
-      }
-    }
+
     html,body{height:100%}
     body{
       margin:0;
@@ -33,7 +34,7 @@
       border:1px solid var(--border);
       border-radius:20px;
       padding: clamp(16px, 4vw, 36px);
-      box-shadow: 0 6px 24px rgba(0,0,0,.08);
+      box-shadow: 0 6px 24px rgba(0,0,0,.06);
     }
     header{
       display:grid;
@@ -55,11 +56,12 @@
     }
     .cover{
       width:100%;
+      height:auto;
       max-width: 360px;
       border-radius:16px;
       border:1px solid var(--border);
       display:block;
-      background:#00000010;
+      background:#00000008;
     }
     .btns{
       display:flex; flex-wrap:wrap; gap:10px; margin: 16px 0 6px 0;
@@ -96,15 +98,16 @@
       <header>
         <div>
           <h1>Field Guide Of All The Birds We Found One Year In The United States</h1>
-          <p class="tagline">A funny, slightly feral road-trip bird book. Drawings, sightings, and questionable life choices.</p>
+          <p class="tagline">A funny, slightly feral road‑trip bird book. Drawings, sightings, and questionable life choices.</p>
           <div class="btns">
             <a class="btn primary" href="https://www.amazon.com/dp/XXXXXXXX" target="_blank" rel="noopener">Buy on Amazon</a>
             <a class="btn" href="https://www.barnesandnoble.com/w/XXXXXXXX" target="_blank" rel="noopener">Buy on B&amp;N</a>
           </div>
-          <p class="meta">First edition • Full color • 225 pages • ISBN: 978-X-XXXXXX-XX-X</p>
+          <p class="meta">First edition • Full color • 225 pages • ISBN: 978‑X‑XXXXXX‑XX‑X</p>
         </div>
 
         <div style="display:flex; justify-content:center;">
+          <!-- Your cover path -->
           <img class="cover" src="assets/bookCoverWeb.jpg" alt="Book cover: EWGTB" />
         </div>
       </header>
