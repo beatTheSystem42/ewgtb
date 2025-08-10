@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EWGTB — Book</title>
+  <meta name="description" content="Field Guide Of All The Birds We Found One Year In The United States" />
+  <style>
+    :root{
+      --bg:#fafafa; --fg:#111; --muted:#666; --card:#ffffff; --border:#e6e6e6; --accent:#0d6efd;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0f1115; --fg:#e7e7e7; --muted:#a1a1a1; --card:#151821; --border:#262a36; --accent:#6ea8fe;
+      }
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family: "Courier New", Courier, monospace;
+      -webkit-font-smoothing: antialiased;
+      line-height:1.55;
+    }
+    .wrap{
+      max-width: 820px;
+      margin: 24px auto;
+      padding: 16px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:20px;
+      padding: clamp(16px, 4vw, 36px);
+      box-shadow: 0 6px 24px rgba(0,0,0,.08);
+    }
+    header{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:18px;
+    }
+    @media(min-width:820px){
+      header{ grid-template-columns: 1.2fr .8fr; align-items:center; }
+    }
+    h1{
+      margin:0 0 6px 0;
+      font-size: clamp(28px, 5vw, 44px);
+      letter-spacing: .02em;
+    }
+    .tagline{
+      color:var(--muted);
+      margin: 4px 0 14px 0;
+      font-size: clamp(14px, 2.6vw, 16px);
+    }
+    .cover{
+      width:100%;
+      max-width: 360px;
+      border-radius:16px;
+      border:1px solid var(--border);
+      display:block;
+      background:#00000010;
+    }
+    .btns{
+      display:flex; flex-wrap:wrap; gap:10px; margin: 16px 0 6px 0;
+    }
+    .btn{
+      display:inline-block;
+      padding: 10px 14px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      text-decoration:none;
+      color:var(--fg);
+      background:transparent;
+      transition: transform .05s ease, background .2s ease;
+    }
+    .btn:hover{ transform: translateY(-1px); background: #00000008; }
+    .btn.primary{
+      background:var(--accent);
+      color:white;
+      border-color: transparent;
+    }
+    .meta{
+      margin-top: 10px;
+      font-size: 14px;
+      color:var(--muted);
+    }
+    hr{
+      border:none; height:1px; background:var(--border); margin: 22px 0;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header>
+        <div>
+          <h1>Field Guide Of All The Birds We Found One Year In The United States</h1>
+          <p class="tagline">A funny, slightly feral road-trip bird book. Drawings, sightings, and questionable life choices.</p>
+          <div class="btns">
+            <a class="btn primary" href="https://www.amazon.com/dp/XXXXXXXX" target="_blank" rel="noopener">Buy on Amazon</a>
+            <a class="btn" href="https://www.barnesandnoble.com/w/XXXXXXXX" target="_blank" rel="noopener">Buy on B&amp;N</a>
+          </div>
+          <p class="meta">First edition • Full color • 225 pages • ISBN: 978-X-XXXXXX-XX-X</p>
+        </div>
+
+        <div style="display:flex; justify-content:center;">
+          <img class="cover" src="assets/bookcover.jpg" alt="Book cover: EWGTB" />
+        </div>
+      </header>
+
+      <hr />
+
+    </section>
+  </main>
+</body>
+</html>
