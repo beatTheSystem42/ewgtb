@@ -66,17 +66,14 @@
     .btns{
       display:flex; flex-wrap:wrap; gap:10px; margin: 16px 0 6px 0;
     }
-    .btn{
-      display:inline-block;
-      padding: 10px 14px;
-      border-radius:12px;
-      border:1px solid var(--border);
-      text-decoration:none;
-      color:var(--fg);
-      background:transparent;
-      transition: transform .05s ease, background .2s ease;
+    .btn.primary {
+      background: #FF9900; /* Amazon yellow-orange */
+      color: #111; /* dark text like Amazon uses */
+      border-color: transparent;
     }
-    .btn:hover{ transform: translateY(-1px); background: #00000008; }
+    .btn.primary:hover {
+      background: #e68a00; /* slightly darker on hover */
+    }
     .btn.primary{
       background:var(--accent);
       color:white;
@@ -98,12 +95,12 @@
       <header>
         <div>
           <h1>Field Guide Of All The Birds We Found One Year In The United States</h1>
-          <p class="tagline">A funny, slightly feral road‑trip bird book. Drawings, sightings, and questionable life choices.</p>
+          <p class="tagline">Two brothers travel across the United States in a used minivan on a mission to find as many bird species as they can in a single year.</p>
           <div class="btns">
             <a class="btn primary" href="https://www.amazon.com/dp/XXXXXXXX" target="_blank" rel="noopener">Buy on Amazon</a>
             <a class="btn" href="https://www.barnesandnoble.com/w/XXXXXXXX" target="_blank" rel="noopener">Buy on B&amp;N</a>
           </div>
-          <p class="meta">First edition • Full color • 225 pages • ISBN: 978‑X‑XXXXXX‑XX‑X</p>
+          <p class="meta">First edition • Paperback • Full color • 223 pages • ISBN: 979-8-218741-63-1</p>
         </div>
 
         <div style="display:flex; justify-content:center;">
