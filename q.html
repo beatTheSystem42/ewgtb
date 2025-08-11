@@ -21,7 +21,8 @@
       window.location.replace(destinations[id]);
     } else {
       document.addEventListener("DOMContentLoaded", () => {
-        document.body.innerHTML = `<h1>Invalid or missing QR code ID.</h1>`;
+        document.body.innerHTML = `<h1>Invalid or missing QR code ID: ${id !== null ? id : 'none'}</h1>`;
+        console.log(`QR Debug — Received ID: ${id}`);
       });
     }
   </script>
